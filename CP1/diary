@@ -1,0 +1,515 @@
+help diart
+--- help for <strong>diary</strong> ---
+
+ <strong>diary</strong> Save text of MATLAB session.
+    <strong>diary</strong> FILENAME causes a copy of all subsequent command window input
+    and most of the resulting command window output to be appended to the
+    named file.  If no file is specified, the file 'diary' is used.
+ 
+    <strong>diary</strong> OFF suspends it. 
+    <strong>diary</strong> ON turns it back on.
+    <strong>diary</strong>, by itself, toggles the diary state.
+ 
+    Use the functional form of <strong>diary</strong>, such as <strong>diary</strong>('file'),
+    when the file name is stored in a string.
+ 
+    See also <a href="matlab:help save">save</a>.
+
+    <a href="matlab:doc diary">Reference page for diary</a>
+
+help diary
+ <strong>diary</strong> Save text of MATLAB session.
+    <strong>diary</strong> FILENAME causes a copy of all subsequent command window input
+    and most of the resulting command window output to be appended to the
+    named file.  If no file is specified, the file 'diary' is used.
+ 
+    <strong>diary</strong> OFF suspends it. 
+    <strong>diary</strong> ON turns it back on.
+    <strong>diary</strong>, by itself, toggles the diary state.
+ 
+    Use the functional form of <strong>diary</strong>, such as <strong>diary</strong>('file'),
+    when the file name is stored in a string.
+ 
+    See also <a href="matlab:help save">save</a>.
+
+    <a href="matlab:doc diary">Reference page for diary</a>
+
+clear
+diary ON
+ exp_esc = esc1 ^. esc2;
+                 
+{Error: Unexpected MATLAB operator.
+} 
+{Undefined function or variable 'rz_esc'.
+} 
+{Undefined function or variable 'rz_esc'.
+} 
+{Undefined function or variable 'rz_esc'.
+} 
+
+M1 =
+
+     1     1     1     1
+     1     1     1     1
+     1     1     1     1
+     1     1     1     1
+
+
+M2 =
+
+    0.8147    0.6324    0.9575    0.9572
+    0.9058    0.0975    0.9649    0.4854
+    0.1270    0.2785    0.1576    0.8003
+    0.9134    0.5469    0.9706    0.1419
+
+
+M3 =
+
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+
+
+M3 =
+
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+
+
+identity =
+
+     1     0     0     0
+     0     1     0     0
+     0     0     1     0
+     0     0     0     1
+
+ mult1 = esc| * identity
+              
+{Error: Unexpected MATLAB operator.
+} 
+ mult1 = esc| .* identity
+              
+{Error: Unexpected MATLAB operator.
+} 
+ mult1 = esc| * identity
+              
+{Error: Unexpected MATLAB operator.
+} 
+
+mult1 =
+
+    12     0     0     0
+     0    12     0     0
+     0     0    12     0
+     0     0     0    12
+
+
+mult2 =
+
+    6.8259    1.9462    1.9878    8.2706
+    5.6327    9.5314    7.2238    8.9778
+    0.1428    3.7346    3.1557    5.4065
+    4.0455    6.3424    7.8489    1.0059
+
+ mult2 / 12 = M2
+            
+{Error: The expression to the left of the equals sign is not a
+valid target for an assignment.
+} 
+
+ans =
+
+  4×4 <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a> array
+
+   1   1   1   0
+   0   1   0   0
+   1   1   1   1
+   0   1   1   1
+
+
+ans =
+
+  4×4 <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a> array
+
+   1   1   1   1
+   1   1   1   1
+   1   1   1   1
+   1   1   1   1
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('assert')" style="font-weight:bold">assert</a>
+The condition input argument must be a scalar logical.
+} 
+
+produc1 =
+
+     4     4     4     4
+     4     4     4     4
+     4     4     4     4
+     4     4     4     4
+
+
+produc2 =
+
+    2.5965    2.1880    2.7471    3.1209
+    2.9269    1.1853    0.7340    0.3245
+    2.5910    2.9788    1.4739    3.7175
+    1.8037    0.7558    2.5025    3.1029
+
+
+produc2 =
+
+     4     4     4     4
+     4     4     4     4
+     4     4     4     4
+     4     4     4     4
+
+
+produc2 =
+
+    2.4899    1.8837    0.9037    1.2444
+    2.3482    0.9220    0.6828    3.6935
+    0.8310    3.3772    0.9107    1.7208
+    1.2050    0.7791    1.7428    0.7393
+
+{Undefined function or variable 'product1'.
+} 
+Lprod1 = size(product1)
+{Undefined function or variable 'product1'.
+} 
+Lprod1 = size(produc1)
+
+Lprod1 =
+
+     4     4
+
+Lprod1 = size(produc1);
+LM2 = size(M2);
+assert(Lprod1 == LM2)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('assert')" style="font-weight:bold">assert</a>
+The condition input argument must be a scalar logical.
+} 
+
+produc2 =
+
+     1     1     1     1
+     1     1     1     1
+     1     1     1     1
+     1     1     1     1
+
+1:1
+
+ans =
+
+     1
+
+1:3
+
+ans =
+
+     1     2     3
+
+(1, 3):(3, 4)
+ (1, 3):(3, 4)
+   
+{Error: Expression or statement is incorrect--possibly
+unbalanced (, {, or [.
+} 
+L(1)
+
+ans =
+
+     4
+
+
+produc2 =
+
+     1     1     1     1
+     1     1     1     1
+     1     1     1     1
+     1     1     1     1
+
+{Undefined function or variable 'product2'.
+} 
+
+produc2 =
+
+     1     1     1     1
+     1     1     1     1
+     1     1     1     1
+     1     1     1     1
+
+
+ans =
+
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+
+
+ans =
+
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+
+
+ans =
+
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+
+clc
+
+ans =
+
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+
+
+ans =
+
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+
+
+ans =
+
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+
+ M2(1,)
+      
+{Error: Unbalanced or unexpected parenthesis or bracket.
+} 
+ M2(,1)
+    
+{Error: Expression or statement is incorrect--possibly
+unbalanced (, {, or [.
+} 
+
+ans =
+
+    0.6022
+    0.3868
+    0.9160
+    0.0012
+
+
+ans =
+
+    0.3411    0.2428    0.1887    0.6834
+
+
+ans =
+
+    0.6476
+    0.6790
+    0.6358
+    0.9452
+
+
+vect50 =
+
+  Columns 1 through 10
+
+     1     3     5     7     9    11    13    15    17    19
+
+  Columns 11 through 20
+
+    21    23    25    27    29    31    33    35    37    39
+
+  Columns 21 through 25
+
+    41    43    45    47    49
+
+
+v_size =
+
+     4     1
+
+{Undefined function or variable 't'.
+} 
+{Undefined function or variable 'trans'.
+} 
+help transpose
+ .' Transpose.
+    X.' is the non-conjugate transpose.
+ 
+    B = <strong>transpose</strong>(A) is called for the syntax A.' when A is an object.
+ 
+    See also <a href="matlab:help ctranspose">ctranspose</a>, <a href="matlab:help permute">permute</a>.
+
+    <a href="matlab:doc transpose">Reference page for transpose</a>
+    <a href="matlab:matlab.internal.language.introspective.overloads.displayOverloads('transpose')">Other functions named transpose</a>
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Inner matrix dimensions must agree.
+} 
+
+vect2 =
+
+    0.7689
+    0.1673
+    0.8620
+    0.9899
+
+
+ans =
+
+     1
+     2
+     3
+
+
+vect1 =
+
+     1
+     2
+     3
+
+
+vect1 =
+
+     1
+     2
+     3
+
+
+vect1 =
+
+     1
+     2
+     3
+
+ %% 1.6.2 Scalars, Vector and Matrix Operations in MATLAB
+ 
+{Error: This statement is incomplete.
+} 
+
+vect2 =
+
+    0.1781
+    0.3596
+    0.0567
+    0.5219
+
+
+vect2 =
+
+    0.5972
+    0.2999
+    0.1341
+
+
+vect1 =
+
+     1     2     3
+
+
+vect2 =
+
+    0.9954
+    0.3321
+    0.2973
+
+vect1 * vect2
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Inner matrix dimensions must agree.
+} 
+vect2 * vect
+{Undefined function or variable 'vect'.
+} 
+vect2 * vect1
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Inner matrix dimensions must agree.
+} 
+vect2 * vect1'
+
+ans =
+
+    0.9954    1.9908    2.9862
+    0.3321    0.6642    0.9963
+    0.2973    0.5947    0.8920
+
+
+vect1 =
+
+     1     2     3
+
+
+vect2 =
+
+    0.3381
+    0.2940
+    0.7463
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Inner matrix dimensions must agree.
+} 
+
+vect1 =
+
+     1     2     3
+
+
+vect2 =
+
+    0.7802
+    0.3376
+    0.6079
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Inner matrix dimensions must agree.
+} 
+vect1 * vect2
+
+ans =
+
+    3.2789
+
+vect2 * vect1'
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Inner matrix dimensions must agree.
+} 
+
+vect1 =
+
+     1     2     3
+
+
+vect2 =
+
+    0.6837
+    0.1321
+    0.7227
+
+
+prod =
+
+    0.6837    1.3674    2.0511
+    0.1321    0.2642    0.3962
+    0.7227    1.4454    2.1682
+
+
+vect1 =
+
+     1     2     3
+
+
+vect2 =
+
+    0.3664
+    0.3692
+    0.6850
+
