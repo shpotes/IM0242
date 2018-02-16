@@ -36,7 +36,7 @@ points_2 = M1 * points_h;
 S2 = M1 * S0;
 
 figure;
-draw_fill_solid(points_2', triangles, 'wareframe')
+draw_fill_solid(points_2', triangles, 'X')
 axesSetup(points_2)
 
 figure;

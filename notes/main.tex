@@ -1,0 +1,55 @@
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[utf8]{inputenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment thi
+\usepackage[spanish]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the temp
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered,
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom
+\fancyhead{} % No page header - if you want one, create it in the same way as t
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1,
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2,
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment t
+
+%------------------------------------------------------------------------------
+%	TITLE SECTION
+%------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule comman
+
+\title{
+\normalfont \normalsize
+\textsc{Universidad EAFIT, } \\ [25pt] % Your university, sch
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Introducción a sistemas CAD/CAM \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Santiago Hincapie} % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle
+\input{conceptos-basicos}
+%\input{invarianza}
+\end{document}
